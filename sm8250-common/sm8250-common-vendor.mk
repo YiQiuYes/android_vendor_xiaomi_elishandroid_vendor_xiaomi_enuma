@@ -641,7 +641,6 @@ PRODUCT_PACKAGES += \
     libGLESv2_adreno_libGLESv2_adreno_symlink64 \
     libq3dtools_adreno_libq3dtools_adreno_symlink64
 
-ifneq ($(TARGET_IS_TABLET),true)
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
     vendor/xiaomi/sm8250-common/proprietary/vendor/etc/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
@@ -672,4 +671,3 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-service-qti \
     mlipayd@1.1 \
     slim_daemon
-endif
